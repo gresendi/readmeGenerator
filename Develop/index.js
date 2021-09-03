@@ -1,6 +1,6 @@
 const { prompt } = require('inquirer')
 
-
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // array of questions for user
 //THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -57,6 +57,19 @@ const questions = [{
 
 ];
 
+
+let testData = {
+  title: 'readme Generator',
+  description: 'it renders a readme file ',
+  installation: 'node index.js',
+  usage: 'save time creating a readme file',
+  test: 'follow prompts',
+  contibutions: 'add me on linked in',
+  license: 'MIT License',
+  username: 'gresendi',
+  email: 'gresendi@uci.edu'
+}
+
 // function to write README file
 function writeToFile(fileName, data) {
 }
@@ -66,8 +79,11 @@ function init() {
   prompt(questions)
     .then(answers => {
       console.log(answers)
+      generateMarkdown(answers)
     })
 }
 
 // function call to initialize program
-init();
+// init();
+// console.log(testData)
+init()
