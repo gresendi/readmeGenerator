@@ -10,22 +10,28 @@ function generateMarkdown(data) {
    >${data.description}
   * * *
    >## Table of Contents
-   > -[Installation](#custom-01)
+   > [Description](#description)  
+   > [Installation](#installation)  
+   > [Usage](#usage)  
+   > [Contribution](#contribution)  
+   > [Tests](#tests)  
+   > [License](#license)  
+   > [Questions](#questions)  
   * * *
-   >## Installation {#custom-01}
+   >## Installation
    >${data.installation}
   * * *
    >## Usage
    >${data.usage}
   * * *
-   >## Licesne
-   >${data.license}
-  * * *
-   >## Contributing
+   >## Contribution
    >${data.contibutions}
   * * *
    >## Tests
    >${data.test}
+   * * *
+   >## License
+   >${data.license}
   * * *
  > ## Questions
  > Github profile: https://github.com/${data.username}  

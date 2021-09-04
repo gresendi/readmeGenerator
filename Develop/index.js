@@ -7,50 +7,57 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [{
   type: 'input',
   name: 'title',
-  message: 'Enter the title of the project'
+  message: 'Enter the title of the project',
+  validate: (value)=>{if(value){return true} else {return 'I need a value to continue'}}
 },
 {
   type: 'input',
   name: 'description',
   message: 'Enter a description for you project',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 
 },
 {
   type: 'input',
   name: 'installation',
   message: 'Enter installation instructions',
-
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 {
   type: 'input',
   name: 'usage',
-  message: 'Enter usage cases for your project'
+  message: 'Enter usage cases for your project',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 {
   type: 'input',
   name: 'test',
-  message: 'Enter any test instructions'
+  message: 'Enter any test instructions',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 {
   type: 'input',
   name: 'contibutions',
-  message: 'Enter contribution guidlines'
+  message: 'Enter contribution guidlines',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 {
   type: 'list',
   name: 'license',
   message: 'Choose your license',
-  choices: ['MIT License', 'Apache License v2.0', 'GNU General Public License v3.0']
+  choices: ['MIT License', 'Apache License v2.0', 'GNU General Public License v3.0', 'N/A']
 },
 {
   type: 'input',
   name: 'username',
-  message: 'Enter your Github username'
+  message: 'Enter your Github username',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 {
   type: 'input',
   name: 'email',
-  message: 'Enter your email'
+  message: 'Enter your email',
+  validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
 
 
