@@ -45,7 +45,7 @@ const questions = [{
   type: 'list',
   name: 'license',
   message: 'Choose your license',
-  choices: ['MIT License', 'Apache License v2.0', 'GNU General Public License v3.0', 'N/A']
+  choices: ['MIT License', 'Apache License v2.0', 'GNU General Public License v3.0', 'Unlicense']
 },
 {
   type: 'input',
@@ -59,33 +59,15 @@ const questions = [{
   message: 'Enter your email',
   validate: (value) => { if (value) { return true } else { return 'I need a value to continue' } }
 },
-
-
-
 ];
 
 
-let testData = {
-  title: 'readme Generator',
-  description: 'it renders a readme file ',
-  installation: 'node index.js',
-  usage: 'save time creating a readme file',
-  test: 'follow prompts',
-  contibutions: 'add me on linked in',
-  license: 'MIT License',
-  username: 'gresendi',
-  email: 'gresendi@uci.edu'
-}
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 function init() {
   prompt(questions)
     .then(answers => {
-      console.log(answers)
       generateMarkdown(answers)
     })
 }
