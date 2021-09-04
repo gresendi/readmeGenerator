@@ -27,7 +27,7 @@
   * * *
    >## Tests
    >Simply run the index.js file in node and follow the prompts. When finished program will give you a message indicating the README.md file has been created.
-   ![Example of Program Running](https://github.com/gresendi/readmeGenerator/blob/main/running.png)
+   ![Example of Program Running](https://github.com/gresendi/readmeGenerator/blob/main/running.PNG)
   * * *
  > ## Questions
  >In order to get in contact with me, simply send me a message to the email provided below.
