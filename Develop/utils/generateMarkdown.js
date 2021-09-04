@@ -40,7 +40,7 @@ function generateMarkdown(data) {
 
 `
 console.log(output)
-fs.writeFile('README.md',output,err=>{
+fs.writeFile('../README.md',output,err=>{
   if(err){console.log(err)}
 })
 
