@@ -1,5 +1,5 @@
 const fs = require('fs')
-
+//function to generate license badge
 function generateBadge(license) {
   let badge =''
   switch(license){
@@ -21,7 +21,7 @@ function generateBadge(license) {
 }
 
 
-// function to generate markdown for README
+// function to generate markdown for README and create readme file
 function generateMarkdown(data) {
   let badge = generateBadge(data.license)
   let output = `${badge}

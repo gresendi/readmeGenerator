@@ -3,7 +3,7 @@ const { prompt } = require('inquirer')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // array of questions for user
-//THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
 const questions = [{
   type: 'input',
   name: 'title',
@@ -73,6 +73,5 @@ function init() {
 }
 
 // function call to initialize program
-// init();
-// console.log(testData)
+
 init()
